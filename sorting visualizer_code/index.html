@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bars_container" id="bars_container"></div>
+      <h1 style="color:rgb(255, 255, 255);"> Sorting Visualizer by Abbas Dossa , Abbas Zaidi </h1>
+      <div class="buttons_container">
+
+          <input type="file" id="upload"/>
+          <!-- <input type="file" class="filingbtn" id = "btnattach" onclick="openattach()" value = "Upload File"> -->
+        <select name="" id="speed">
+          <option value="400">Slow</option>
+          <option value="100">Fast</option>
+        </select>
+        <select name="" id="algo">
+          <option value="bubble">Bubble Sort</option>
+          <option value="insertion">Insertion Sort</option>
+          <option value="heap">Heap Sort</option>
+          <option value="merge">Merge Sort</option>
+          <option value="quick">Quick Sort</option>
+          <option value="count">Count Sort</option>
+          <option value="radix">Radix Sort</option>
+          <option value="bucket">Bucket Sort</option>
+          <option value="new1">7.4.5</option>
+          <option value="new2">8.4.2</option>
+        </select>
+        <button id="generate_array_btn">Generate Array</button>
+        <button id="shuffle_array_btn">Next Sorting Technique</button>
+        <button id="sort_btn">Sort</button>
+      </div>
+      <div id="ans"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

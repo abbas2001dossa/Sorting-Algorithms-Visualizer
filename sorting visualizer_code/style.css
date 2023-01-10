@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 100vw;
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border: solid 2px black;
+    position: relative;
+}
+
+.bars_container{
+    position: absolute;
+    bottom: 60px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    /* height: 300px; */
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 2px black; */
+    transform: rotate(180deg) rotateY(180deg);
+
+}
+
+.bar{
+    width: 45px;
+    background-color: rgb(130, 130, 130);
+    margin: 0 2px;
+    border-radius: 2px;
+    transition: height 0.5s ease-in-out;
+    color: black;
+
+}
+#ans{
+    width: 400px;
+    margin: 20px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+}
+.bar1{
+    width: 45px;
+    background-color: rgb(126, 126, 126);
+    margin: 0 2px;
+    border-radius: 2px;
+    transition: height 0.5s ease-in-out;
+    color: black;
+
+}
+
+body{
+    background-color: black;
+}
+
+
+/* .buttons_container > button, select,input{
+    width: 200px;
+    height: 30px;
+    background-color: #677685;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition:  0.2s ease-in-out;
+    z-index: 2;
+    /* border: solid 2px black; */
+/* } */ 
+
+.buttons_container > button, select, input {
+    width: 200px;
+    height: 30px;
+    background-color: #677685;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+    border: solid 2px white;
+    padding: 4px 3px;
+    border: 2px 2px;
+    margin: 10px 17px;
+}
+#upload{
+    position:absolute; 
+    left:0px; 
+    top:83px;
+}
+#speed{
+    position:absolute; 
+    left:580px;top:83px; 
+}
+
+#algo{
+    position:absolute; 
+    left:880px; top:83px;
+}
+#generate_array_btn{
+
+    position:absolute; 
+    left:280px; 
+    top:500px;
+    background-color: aqua;
+    color: black;
+
+}
+
+#shuffle_array_btn{
+    position:absolute; 
+    left:580px; 
+    top:500px;
+    background-color: aqua;
+    color: black;
+}
+
+#sort_btn{
+    background-color: aqua;
+    color: black;
+    position:absolute; 
+    left:880px; 
+    top:500px;
+}
+
+button:hover{
+    background-color: black;
+}
